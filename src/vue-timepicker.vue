@@ -378,10 +378,12 @@ export default {
   <div class="time-picker-overlay" v-if="showDropdown" @click.stop="toggleDropdown"></div>
   <div class="dropdown" v-show="showDropdown">
     <div class="select-list">
+        <!--
       <ul class="hours">
         <li class="hint" v-text="hourType"></li>
         <li v-for="hr in hours" v-text="hr" :class="{active: hour === hr}" @click.stop="select('hour', hr)"></li>
       </ul>
+        -->
       <ul class="minutes">
         <li class="hint" v-text="minuteType"></li>
         <li v-for="m in minutes" v-text="m" :class="{active: minute === m}" @click.stop="select('minute', m)"></li>
